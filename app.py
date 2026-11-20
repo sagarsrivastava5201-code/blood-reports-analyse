@@ -30,6 +30,43 @@ st.markdown(
     padding: 0.7rem 1rem; border-radius: 6px; font-size: 0.9rem;
 }
 div.stButton > button { border-radius: 10px; font-weight: 600; }
+
+/* ---------- Responsive tweaks ---------- */
+.block-container { max-width: 1100px; }
+
+/* Tables (test results): never overflow the screen */
+div[data-testid="stMarkdownContainer"] table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;          /* scroll sideways if still too wide */
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+div[data-testid="stMarkdownContainer"] th,
+div[data-testid="stMarkdownContainer"] td {
+    padding: 6px 8px;
+    vertical-align: top;
+}
+
+@media (max-width: 640px) {
+    .block-container { padding: 1rem 0.8rem 3rem 0.8rem; }
+    .main-title { font-size: 1.6rem; }
+    .sub-title { font-size: 0.95rem; }
+    .disclaimer { font-size: 0.8rem; padding: 0.5rem 0.7rem; }
+
+    div[data-testid="stMarkdownContainer"] h2 { font-size: 1.15rem; }
+    div[data-testid="stMarkdownContainer"] p,
+    div[data-testid="stMarkdownContainer"] li { font-size: 0.92rem; line-height: 1.5; }
+
+    div[data-testid="stMarkdownContainer"] table { font-size: 0.78rem; }
+    div[data-testid="stMarkdownContainer"] th,
+    div[data-testid="stMarkdownContainer"] td {
+        padding: 4px 5px;
+        white-space: normal;       /* wrap text instead of stretching */
+        word-break: break-word;
+    }
+    div.stButton > button, div.stDownloadButton > button { width: 100%; }
+}
 </style>
 """,
     unsafe_allow_html=True,
