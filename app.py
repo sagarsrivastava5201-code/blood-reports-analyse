@@ -439,7 +439,7 @@ st.markdown(
 <div class="hl-doc">
 <div class="hl-avatar">👨‍⚕️</div>
 <div>
-<p><b>Dr. Your Name</b><br>MBBS, MD (General Medicine)</p>
+<p><b>sagar srivastava</b><br>MBBS, MD (General Medicine)</p>
 <p>15+ years of experience. Specializes in reading blood reports and advising on the right tests.</p>
 </div>
 </div>
@@ -454,7 +454,7 @@ st.markdown(
 </div>
 <div>
 <h4>Contact</h4>
-<p>Clinic: Lucknow, Uttar Pradesh<br>Hours: Monday to Saturday, 10 AM to 6 PM<br>Email: doctor@example.com</p>
+<p>Clinic: Lucknow, Uttar Pradesh<br>Hours: Monday to Saturday, 10 AM to 6 PM<br>Email: sagar@123gmail.com</p>
 </div>
 </div>
 <div class="hl-emergency"><b>In an emergency:</b> if you have chest pain, trouble breathing or fainting, call 112 or 108 right away. Do not wait for a report.</div>
